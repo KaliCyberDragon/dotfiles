@@ -1,0 +1,7 @@
+preload = /home/shdw/Wallpapers/fuji.jpg
+# Se quiser o mesmo nos dois:
+wallpaper = eDP-1,/home/shdw/Wallpapers/fuji.jpg
+wallpaper = HDMI-A-1,/home/shdw/Wallpapers/fuji.jpg
+
+# Desativa o splash (aquele texto que aparece embaixo)
+splash = false

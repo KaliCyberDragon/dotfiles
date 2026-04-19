@@ -1,0 +1,20 @@
+⛩️  GUIA DE COMANDOS - CYBER-DECK  ⛩️
+   ====================================
+
+   [ SISTEMA ]
+    + SHIFT + B  ➜  Resetar Waybar
+    + Q          ➜  Abrir Terminal (Kitty)
+    + R          ➜  Menu de Apps (Rofi) 🚀
+    + C          ➜  Fechar Janela
+    + M          ➜  Sair do Hyprland
+
+   [ ESTUDOS & TOOLS ]
+    + E          ➜  Explorador de Arquivos
+    + N          ➜  Abrir Neovim (Editor)
+    + F          ➜  Navegador Web
+   
+   [ WORKSPACES ]
+   一 (1) | 二 (2) | 三 (3) | 四 (4) | 五 (5)
+   ====================================
+   "Estudar é polir a própria alma." 🏮
+   Ganbare, mestre! ⛩️🐉👊

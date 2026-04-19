@@ -1,0 +1,83 @@
+/* Configuração Geral da Barra */
+* {
+    font-family: "Noto Sans CJK JP", "Font Awesome 6 Free", "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(40, 42, 54, 0.8); /* Fundo Dracula com transparência */
+    color: #f8f8f2;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Estilo das Workspaces (Onde estão seus Kanjis) */
+#workspaces button {
+    padding: 0 10px;
+    background-color: transparent;
+    color: #f8f8f2;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+    color: #bd93f9; /* Roxo Dracula para a aba ativa */
+    border-bottom: 3px solid #bd93f9;
+}
+
+#workspaces button.urgent {
+    color: #ff5555; /* Vermelho para alertas */
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+/* Estilo dos Módulos da Direita e Centro */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#window,
+#mpd {
+    padding: 0 12px;
+    color: #f8f8f2;
+    background-color: transparent; /* Remove os quadrados coloridos */
+}
+
+/* Destaque sutil para módulos críticos */
+#battery.critical:not(.charging) {
+    color: #ff5555;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ff5555;
+        color: #f8f8f2;
+    }
+}
+
+/* Separador invisível para dar respiro */
+#tray {
+    margin-right: 10px;
+}

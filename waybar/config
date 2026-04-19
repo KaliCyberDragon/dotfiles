@@ -97,6 +97,13 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟",
+    "on-click": "pavucontrol",
+    "on-click-right": "amixer set Master toggle",
+    "format-icons": {
+        "default": ["󰕿", "󰖀", "󰕾"]
+    
     }
 }
